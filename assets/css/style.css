@@ -1,0 +1,46 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url("../fonts/static/HankenGrotesk-Bold.ttf");
+    font-weidght: bold;
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url("../fonts/static/HankenGrotesk-ExtraBold.ttf");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: HankenGrotesk;
+    src: url("../fonts/static/HankenGrotesk-Medium.ttf");
+    font-weight: normal;
+}
+
+:root {
+    /* Primary */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Fonts */
+    --font-size-paragraph: 18px;
+}
