@@ -23,10 +23,10 @@
 
 :root {
     /* Primary */
-    --light-red: hsl(0, 100%, 67%);
-    --orangey-yellow: hsl(39, 100%, 56%);
-    --green-teal: hsl(166, 100%, 37%);
-    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red: hsla(0, 100%, 67%, 10%);
+    --orangey-yellow: hsla(39, 100%, 56%, 10%);
+    --green-teal: hsla(166, 100%, 37%, 10%);
+    --cobalt-blue: hsla(234, 85%, 45%, 10%);
 
     /* Gradients */
     --light-slate-blue-background: hsl(252, 100%, 67%);
@@ -43,4 +43,153 @@
 
     /* Fonts */
     --font-size-paragraph: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: HankenGrotesk;
+}
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    background-color: #fbf9ff;
+    background-color: black;
+}
+
+main {
+    display: flex;
+}
+
+#result-tab {
+    background: linear-gradient(180deg, var(--light-slate-blue-background) 0%, var(--light-royal-blue-background) 100%);
+    width: 200px;
+    height: 350px;
+
+    display: grid;
+    place-items: center;
+
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+#result-tab > * {
+    color: var(--white);
+    text-align: center;
+}
+
+#result-tab .result-circle {
+    background: var(--violet-blue-circle);
+    border-radius: 50%;
+
+    width: 125px;
+    height: 125px;
+
+    display: grid;
+    place-items: center;
+}
+
+#result-tab .result-circle h1 {
+    position: relative;
+    top: 15px;
+
+    font-size: 40px;
+}
+
+#result-tab .result-circle p {
+    position: relative;
+    bottom: 20px;
+}
+
+#summary-tab {
+    background-color: var(--white);
+    width: 300px;
+    border-radius: 0px 200=px 20px 0px;
+    padding: 20px;
+
+    position: relative;
+    right: 15px;
+
+    display: grid;
+    place-items: center;
+}
+
+#summary-tab .result-container {
+    display: inline-flex;
+    align-items: center;
+
+    position: relative;
+    bottom: 20px;
+}
+
+#summary-tab .result-container > * {
+    margin-left: 10px;
+    
+}
+
+#summary-tab .result-container .result {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    position: relative;
+    right: 10px;
+}
+
+#summary-tab .summary {
+    position: relative;
+    bottom: 15px;
+}
+
+#summary-tab > .result-container {
+    overflow: hidden;
+    border-radius: 16px;
+    width: 90%;
+    height: 48px;
+    margin-top: 10px;
+}
+
+
+#light-red {
+    background-color: var(--light-red)
+}
+
+#orangey-yellow {
+    background-color: var(--orangey-yellow);
+}
+
+#green-teal {
+    background-color: var(--green-teal)
+}
+
+#cobalt-blue {
+    background-color: var(--cobalt-blue);
+}
+
+input[type=button] {
+    background: var(--dark-gray-blue);
+    color: white;
+
+    width: 90%;
+    height: 48px;
+
+    cursor: pointer;
+    border: 0;
+    border-radius: 40px;
+}
+
+input[type=button]:hover {
+    background: linear-gradient(180deg, var(--light-slate-blue-background) 0%, var(--light-royal-blue-background) 100%);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
 }
