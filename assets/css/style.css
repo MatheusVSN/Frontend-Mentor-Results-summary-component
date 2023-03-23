@@ -50,6 +50,7 @@
     margin: 0;
 
     font-family: HankenGrotesk;
+    overflow-x: hidden;
 }
 
 body {
@@ -68,7 +69,7 @@ main {
 
 #result-tab {
     background: linear-gradient(180deg, var(--light-slate-blue-background) 0%, var(--light-royal-blue-background) 100%);
-    width: 200px;
+    width: 225px;
     height: 350px;
 
     display: grid;
@@ -79,9 +80,25 @@ main {
     z-index: 2;
 }
 
-#result-tab > * {
+#result-tab>* {
     color: var(--white);
     text-align: center;
+}
+
+#result-tab>p {
+    font-size: var(--font-size-paragraph);
+    opacity: 70%;
+}
+
+#result-tab>h2 {
+    font-weight: 700;
+}
+
+#result-tab .performance-commentary {
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
 }
 
 #result-tab .result-circle {
@@ -128,9 +145,12 @@ main {
     bottom: 20px;
 }
 
-#summary-tab .result-container > * {
+#summary-tab .result-container> * {
     margin-left: 10px;
-    
+}
+
+#summary-tab .result-container > p {
+    width: 100%;
 }
 
 #summary-tab .result-container .result {
@@ -148,7 +168,7 @@ main {
     bottom: 15px;
 }
 
-#summary-tab > .result-container {
+#summary-tab>.result-container {
     overflow: hidden;
     border-radius: 16px;
     width: 90%;
@@ -192,4 +212,39 @@ input[type=button]:hover {
 footer {
     position: fixed;
     bottom: 0px;
+}
+
+@media screen and (max-width: 605px) {
+    main {
+        display: block;
+        background-color: white;
+    }
+
+    #result-tab {
+        width: 100vw;
+        height: 40vh;
+        border-radius: 0;
+
+        border-radius: 0px 0px 80px 80px;
+        z-index: 2;
+        position: relative;
+    }
+
+    #summary-tab {
+        width: 100vw;
+        height: auto;
+
+        position: inherit;
+        transform: translateY(-20px);
+    }
+
+    #summary-tab > * {
+        margin-top: 20px;
+    }
+
+    #summary-tab>.result-container {
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
 }
