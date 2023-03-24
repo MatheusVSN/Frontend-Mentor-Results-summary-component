@@ -6,7 +6,7 @@
 
 <h2>Preview</h2>
 
-https://matheusvsn.github.io/Results-summary-component/
+https://matheusvsn.github.io/Frontend-Mentor-Results-summary-component/
 
 <h2>Built with</h2>
 
