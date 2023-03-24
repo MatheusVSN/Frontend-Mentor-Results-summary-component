@@ -223,9 +223,14 @@ footer {
 
 @media screen and (max-width: 605px) {
     html, body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     
+    body {
+        display: grid;
+        place-items: center;
+    }
+
     main {
         display: block;
         background-color: white;
@@ -234,7 +239,7 @@ footer {
 
     #result-tab {
         width: 100vw;
-        height: 40vh;
+        height: 50vh;
         border-radius: 0;
 
         border-radius: 0px 0px 80px 80px;
