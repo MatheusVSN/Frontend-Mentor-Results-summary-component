@@ -6,6 +6,8 @@
 
 <h2>Preview</h2>
 
+https://matheusvsn.github.io/Results-summary-component/
+
 <h2>Built with</h2>
 
 - HTML
