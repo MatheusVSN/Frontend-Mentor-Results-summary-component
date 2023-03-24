@@ -51,6 +51,8 @@
 
     font-family: HankenGrotesk;
     overflow-x: hidden;
+
+    transition: width 200ms ease-out;
 }
 
 body {
@@ -245,7 +247,6 @@ footer {
         height: auto;
 
         position: inherit;
-        transform: translateY(-20px);
     }
 
     #summary-tab > * {
